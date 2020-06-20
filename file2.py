@@ -1,6 +1,10 @@
 """Example file 2."""
 
+from typing import Generator
 
-def do_something_else() -> int:
+
+def do_something_else() -> Generator[int, int, str]:
     """I need a better docstring."""
-    return 123
+    yield 123
+    yield 345
+    return "Done"
