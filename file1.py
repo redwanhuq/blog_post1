@@ -1,6 +1,7 @@
 """Example file 1."""
 
 
-def do_something() -> None:
+def do_something_many_times() -> None:
     """I need a better docstring."""
-    print("Hello world!")
+    for i in range(10):
+        print("Hello world!")
